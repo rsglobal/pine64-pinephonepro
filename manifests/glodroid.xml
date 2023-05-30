@@ -7,6 +7,7 @@
   <remote  name="dbus"       fetch="https://gitlab.freedesktop.org/dbus" />
   <remote  name="libcamera"  fetch="https://git.libcamera.org/libcamera" />
   <remote  name="videolan"   fetch="https://code.videolan.org/videolan" />
+  <remote  name="kernel"     fetch="https://git.kernel.org/pub/scm/linux/kernel/git" />
 
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/drm_hwcomposer" />
@@ -54,7 +55,7 @@
   <project path="glodroid/bootloader/rockchip-rkbin" remote="github"  name="rockchip-linux/rkbin.git" groups="glodroid" revision="7d631e0d5b2d373b54d4533580d08fb9bd2eaad4" clone-depth="1" />
 
   <!-- kernel/firmware components (platform) -->
-  <project path="glodroid/kernel/mainline-6.3"    remote="aosp" name="kernel/common"  groups="glodroid" revision="457391b0380335d5e9a5babdec90ac53928b23b4" clone-depth="1" />
+  <project path="glodroid/kernel/mainline-6.3"    remote="kernel" name="stable/linux.git"  groups="glodroid" revision="refs/tags/v6.3.5" clone-depth="1" />
 
   <!-- compilers for platform components -->
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu"
